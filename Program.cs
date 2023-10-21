@@ -38,6 +38,8 @@ namespace Decrypter
             {
                 try
                 {
+                    // GOTCHARDFILE 秘钥:mtrT40c7lsT0VGn6ltW5Be
+                    // 奥特曼融合激战 秘钥:mtrM2KR9eRJk3RH
                     SeekableAesStream aes = new SeekableAesStream(new MemoryStream(File.ReadAllBytes(path)), "mtrT40c7lsT0VGn6ltW5Be", Encoding.UTF8.GetBytes(paths[i]));
 
                     byte[] data = new byte[aes.Length];
